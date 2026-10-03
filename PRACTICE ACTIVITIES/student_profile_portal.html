@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>My Student Profile</h1>
+        <p>Welcome to my student profile page! Explore my profile details, project media, academic records, and interactive registration form below.</p>
+
+        <nav>
+            <a href="#about">About Me</a> |
+            <a href="#media">Media</a> |
+            <a href="#grades">Academic Records</a> |
+            <a href="#registration">Registration</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <aside>
+        <h2>Quick Profile Card</h2>
+        <p><strong>Student Name:</strong> Allysa Jane D. Ancheta</p>
+        <p><strong>Program:</strong> BS Information Technology</p>
+        <p><strong>Status:</strong> Active / Enrolled</p>
+    </aside>
+
+    <main>
+        <section id="about">
+            <h2>Section A: About Me</h2>
+            <p>
+                Hello! I am Allysa Jane D. Ancheta, a <b>dedicated</b> IT student passionate about software development and web design.
+                I am <i>always eager</i> to build functional applications that solve real-world problems.
+            </p>
+            <p>
+                My main focus areas are <span style="border: 1px solid black; padding: 2px;">Web Systems</span>
+                and database architecture.
+            </p>
+            <p>
+                It is <strong>essential</strong> to practice writing clean code every day, and I remain
+                <em>highly motivated</em> to expand my technical skills.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="media">
+            <h2>Section B: Media &amp; Multimedia</h2>
+            <figure>
+                <div style="text-align: center;">
+                <img src="C:\Users\ALLYSA JANE\OneDrive\ドキュメント\photos\workplace setup.jpg" alt="Developer Workspace Setup" width="500" height="300">
+                <figcaption>Figure 1: My workstation setup for web development practice.</figcaption>
+                </div>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="grades">
+            <h2>Academic Record</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Subject Code</th>
+                        <th>Subject Title</th>
+                        <th>Units</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">Allysa Jane D. Ancheta</td>
+                        <td>IT 222</td>
+                        <td>Advanced Database Management System</td>
+                        <td>3</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>IT 223</td>
+                        <td>Computer Networking 2</td>
+                        <td>3</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>MATH 408</td>
+                        <td>Data Analysis</td>
+                        <td>3</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>ES 101	</td>
+                        <td>Environmental Sciences</td>
+                        <td>3</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>IT 221</td>
+                        <td>Information Management</td>
+                        <td>3</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>GEd 106</td>
+                        <td>Purposive Communication</td>
+                        <td>3</td>
+                        <td>2.25</td>
+                    </tr>
+                    <tr>
+                        <td>PATHFit 4</td>
+                        <td>Team Sports (Basketball and Volleyball)</td>
+                        <td>2</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td>GEd 101</td>
+                        <td>Understanding the Self</td>
+                        <td>3</td>
+                        <td>1.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total Units &amp; Overall GPA</strong></td>
+                        <td><strong>23</strong></td>
+                        <td><strong>1.9674</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="registration">
+            <h2>Interactive Registration Form</h2>
+
+            <form action="/submit_portal_data" method="POST" enctype="multipart/form-data">
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Mobile No.:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="0123-456-7890">
+                </p>
+
+                <p>
+                    <label for="course">Course Track:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a Track --</option>
+                        <optgroup label="Information Technology">
+                            <option value="business_analytics">Business Analytics</option>
+                            <option value="service_management">Service Management</option>
+                            <option value="networking_technology">Networking Technology</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="language">Favorite Programming Language:</label><br>
+                    <input list="languages" id="language" name="language" placeholder="Start typing...">
+                    <datalist id="languages">
+                        <option value="HTML/CSS">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="C++">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label>Select Electives (Optional):</label><br>
+                    <input type="checkbox" id="elec1" name="electives" value="cybersecurity">
+                    <label for="elec1">Advanced Web Systems & Development</label><br>
+                    <input type="checkbox" id="elec2" name="electives" value="data_science">
+                    <label for="elec2">Cloud Computing & Infrastructure</label><br>
+                    <input type="checkbox" id="elec3" name="electives" value="mobile_dev">
+                    <label for="elec3">Mobile App Development</label><br>
+                    <input type="checkbox" id="elec3" name="electives" value="mobile_dev">
+                    <label for="elec3">User Experience (UI/UX) Design</label>
+                </p>
+
+                <p>
+                    <label for="resume">Upload Document / Resume:</label><br>
+                    <input type="file" id="resume" name="resume">
+                </p>
+
+                <p>
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter any extra details here..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Profile Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
