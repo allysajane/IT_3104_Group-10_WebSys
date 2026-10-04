@@ -6,87 +6,47 @@
   <title>HTML Forms</title>
 </head>
 <body>
-  <h1>Student Registration Form</h1>
+  <h1>HTML Forms</h1>
 
   <form action="#" method="post">
 
-    <fieldset>
-      <legend>Personal Information</legend>
+    <p>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname">
+    </p>
 
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
-      <br><br>
+    <p>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname">
+    </p>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="juan@email.com" required>
-      <br><br>
+    <p>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+    </p>
 
+    <h4>Account Security:</h4>
+    <p>
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" minlength="8" required>
-      <br><br>
+      <input type="password" id="password" name="password">
+    </p>
 
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" min="1" max="100">
-      <br><br>
+    <h4>Choose your character/s:</h4>
+    <p>
+      <input type="checkbox" id="allysa" name="characters" value="allysa">
+      <label for="allysa">Allysa</label><br>
 
-      <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday">
-      <br><br>
+      <input type="checkbox" id="marc" name="characters" value="marc">
+      <label for="marc">Marc</label><br>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="09123456789">
-    </fieldset>
+      <input type="checkbox" id="glory" name="characters" value="glory">
+      <label for="glory">Glory</label><br>
 
-    <br>
-
-    <fieldset>
-      <legend>Other Details</legend>
-
-      <p>Gender:</p>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="other">
-      <label for="other">Other</label>
-      <br>
-
-      <label for="course">Course:</label>
-      <select id="course" name="course">
-        <option value="">-- Select Course --</option>
-        <option value="bsit">BS Information Technology</option>
-        <option value="bscs">BS Computer Science</option>
-        <option value="bsis">BS Information Systems</option>
-      </select>
-      <br><br>
-
-      <p>Hobbies:</p>
-      <input type="checkbox" id="coding" name="hobbies" value="coding">
-      <label for="coding">Coding</label>
-      <input type="checkbox" id="gaming" name="hobbies" value="gaming">
-      <label for="gaming">Gaming</label>
-      <input type="checkbox" id="music" name="hobbies" value="music">
-      <label for="music">Music</label>
-      <br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="40" placeholder="Write something..."></textarea>
-      <br><br>
-      
-      <label for="photo">Upload Photo:</label>
-      <input type="file" id="photo" name="photo" accept="image/*">
-      <br><br>
-
-      <label for="rating">Rating (1-10):</label>
-      <input type="range" id="rating" name="rating" min="1" max="10" value="5">
-      <br><br>
-
-      <label for="color">Favorite Color:</label>
-      <input type="color" id="color" name="color" value="#db2777">
-    </fieldset>
+      <input type="checkbox" id="johnmark" name="characters" value="johnmark">
+      <label for="johnmark">Johnmark</label>
+    </p>
 
     <br>
-
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
 
