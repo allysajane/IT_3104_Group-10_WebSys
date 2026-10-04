@@ -33,6 +33,18 @@ h1 {
   font-size: 1rem;
 }
 
+header {
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+header h1 { color: #ffffff; }
+header a { color: #ffffff; }
+
 h2 {
   margin: 0 0 20px;
   padding-left: 18px;
