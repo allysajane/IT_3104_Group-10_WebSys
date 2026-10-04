@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="juan@email.com" required>
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+      <br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100">
+      <br><br>
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="09123456789">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Other Details</legend>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      <br><br>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="">-- Select Course --</option>
+        <option value="bsit">BS Information Technology</option>
+        <option value="bscs">BS Computer Science</option>
+        <option value="bsis">BS Information Systems</option>
+      </select>
+      <br><br>
+
+      <p>Hobbies:</p>
+      <input type="checkbox" id="coding" name="hobbies" value="coding">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+      <label for="gaming">Gaming</label>
+      <input type="checkbox" id="music" name="hobbies" value="music">
+      <label for="music">Music</label>
+      <br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="Write something..."></textarea>
+      <br><br>
+      
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+      <br><br>
+
+      <label for="rating">Rating (1-10):</label>
+      <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+      <br><br>
+
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color" value="#db2777">
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+</body>
+</html>
