@@ -4,5 +4,5 @@
 Ancheta, Allysa Jane D. <br/>
 Del Rosario, Marc Lorenz Andrei S. <br/>
 Gadon, Glory Grace V. </br>
-Loregas, Johnmark
+Loregas, Johnmark M.
 </p>
