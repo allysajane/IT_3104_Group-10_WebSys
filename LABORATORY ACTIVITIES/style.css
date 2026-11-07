@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    transition: background-color 0.4s ease;
+}
+
+.card {
+    text-align: center;
+    padding: 40px 32px;
+    max-width: 480px;
+    width: 90%;
+}
+
+h1 {
+    color: darkblue;
+    margin: 0 0 16px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #222;
+    margin: 0 0 24px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: darkblue;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+}
+
+button:hover {
+    background-color: #1a1aa6;
+}
+
+button:active {
+    transform: scale(0.97);
+}
